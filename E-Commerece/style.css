@@ -8,12 +8,12 @@ body {
 }
 
 .header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
 
   .container {
     max-width: 1300px;
-    padding: 0px 25px;
     margin: auto;
+    padding: 0px 25px;
 
     .navbar {
       display: flex;
@@ -26,26 +26,26 @@ body {
         text-decoration: none;
         color: #555;
       }
-      .headerContent {
-        margin-top: 70px;
-        display: flex;
-        align-items: center;
+    }
 
-        .headerContentItem {
-          flex: 1;
+    .headerContent {
+      margin-top: 70px;
+      display: flex;
+      align-items: center;
 
-          h1 {
-            font-size: 50px;
-            line-height: 60px;
-            margin: 25px 0px;
-          }
-          p {
-            color: #555;
-          }
-          img {
-            width: 100%;
-            padding: 50px 0px;
-          }
+      .headerContentItem {
+        flex: 1;
+        h1 {
+          font-size: 50px;
+          line-height: 60px;
+          margin: 25px 0px;
+        }
+        p {
+          color: #555;
+        }
+        img {
+          width: 100%;
+          padding: 50px 0px;
         }
       }
     }
@@ -61,6 +61,7 @@ body {
     padding: 0px 25px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
     img {
       flex-basis: 30%;
@@ -68,3 +69,54 @@ body {
     }
   }
 }
+
+.feature-products{
+  max-width: 1080px;
+  margin: auto;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  h2{
+    color: #555;
+    line-height: 60px;
+    /* margin-bottom: 80px; */
+    text-align: center;
+  }
+  .customUnderlineContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    .customUnderline{
+      width: 80px;
+      height: 5px;
+      background-color: #ff523b;
+      border-radius: 5px;
+    }
+  }
+  .product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .products-card{
+      display: flex;
+      flex-direction: column;
+      min-width: 200px;
+      padding: 10px;
+      margin-bottom: 50px;
+      flex-basis: calc(25% - 20px);
+      cursor: pointer;
+      transition: transform .5s;
+
+      .product-title{
+        color: #555;
+      }
+      .product-pricing{
+        color: #555;
+        font-size: 14px;
+      }
+    }
+.products-card:hover{
+  transform: translateY(-5px);
+}
+    }
+  }
