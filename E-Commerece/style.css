@@ -193,8 +193,32 @@ color: #555;
         transition: transform 0.5s;
         min-width: 30px;
         margin-bottom: 30px;
-        flex-basis: 30%
-        
+        flex-basis: calc(30% - 50px);
+
+        .testimonialContent{
+          font-size: 12px;
+          margin: 12px 0px;
+          color: #777;
+        }
+        .ratings{
+          padding-top: 20px;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+        .userImage{
+          width: 50px;
+          margin-top: 20px;
+          border-radius: 50%;
+        }
+        h3{
+          font-weight: 600;
+          color: #555;
+          font-size: 16px;
+        }
+      }
+      .testimonialCards:hover{
+        transform: translateY(-10px);
       }
     }
   }
