@@ -222,3 +222,24 @@ color: #555;
       }
     }
   }
+
+  .brandingContainer{
+    margin: 100px auto;
+
+    .brandingInnerContainer{
+      display: flex;
+      justify-content: space-around;
+      max-width: 1080px;
+      padding: 0px 25px;
+      margin: auto;
+
+      img{
+        cursor: pointer;
+        filter: grayscale(100%);
+      }
+      img:hover{
+        filter: none;
+      }
+    }
+
+  }
