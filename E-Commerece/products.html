@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Products</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- header -->
+
+     <!-- header -->
     <div class="header">
         <div class="container">
             <div class="navbar">
@@ -21,95 +22,28 @@
                 <a href="">Account</a>
                 <a href=""><img src="images/cart.png" width="30" height="30" ></a>
             </div>
-            <div class="headerContent">
-                <div class="headerContentItem">
-                    <h1>Elite Gear for<br/> Elite Athletes</h1>
-                    <p>Where performance meets style. Experience sportswear <br/>
-                    engineered for excellence,designed for champions.
-                    </p>
-                </div>
-                <div class="headerContentItem">
-                    <img src="images/image1.png" alt="">
-                </div>
-            </div>
+            
         </div>
     </div>
-    
-    <!-- categorires -->
-     <div class="categories">
-        <div class="container">
-            <img src="images/category-1.jpg" alt="">
-            <img src="images/category-2.jpg" alt="">
-            <img src="images/category-3.jpg" alt="">
-        </div>
-     </div>
 
-     <!-- featured-products -->
-      <div class="feature-products">
-        <h2>Featured Products</h2>
-        <div class="customUnderlineContainer">
-            <div class="customUnderline"></div>
+    <div class="allProductsSection">
+        <div class="allProductsSectionLabel">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort By Price</option>
+                <option>Sort By Popularity</option>
+                <option>Sort By Rating</option>
+                <option>Sort By Sale</option>
+            </select>
         </div>
+
+        <!-- latest products -->
+      <div class="feature-products" style="padding: 0px;">
+    
+       
         <div class="product-container">
-            <div class="products-card">
-                <img src="images/product-1.jpg" alt="products">
-                <span class="product-title">Red Printed T-Shirt</span>
-                <div>
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/emptystar.png" alt="" width="15" height="16">
-                </div>
-                <span class="product-pricing">₹50.0</span>
-            </div>
-            <div class="products-card">
-                <img src="images/product-2.jpg" alt="products">
-                <span class="product-title">HRX Sports Shoes</span>
-                <div>
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/emptystar.png" alt="" width="15" height="16">
-                </div>
-                <span class="product-pricing">₹75.0</span>
-            </div>
-            <div class="products-card">
-                <img src="images/product-3.jpg" alt="products">
-                <span class="product-title">HRX Gray Trackpants</span>
-                <div>
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/emptystar.png" alt="" width="15" height="16">
-                </div>
-                <span class="product-pricing">₹45.0</span>
-            </div>
-            <div class="products-card">
-                <img src="images/product-4.jpg" alt="products">
-                <span class="product-title">Blue Printed T-Shirt</span>
-                <div>
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/emptystar.png" alt="" width="15" height="16">
-                </div>
-                <span class="product-pricing">₹55.0</span>
-            </div>
-        </div>
-      </div>
-      
-      <!-- latest products -->
-      <div class="feature-products">
-        <h2>Latest Products</h2>
-        <div class="customUnderlineContainer">
-            <div class="customUnderline"></div>
-        </div>
-        <div class="product-container">
-            <div class="products-card">
+            <a class="products-card" href="product-details.html">
                 <img src="images/product-5.jpg" alt="products">
                 <span class="product-title">HRX Shoes</span>
                 <div>
@@ -120,7 +54,7 @@
                     <img src="images/emptystar.png" alt="" width="15" height="16">
                 </div>
                 <span class="product-pricing">₹50.0</span>
-            </div>
+            </a>
             <div class="products-card">
                 <img src="images/product-6.jpg" alt="products">
                 <span class="product-title">Black T-Shirt</span>
@@ -205,78 +139,68 @@
                 </div>
                 <span class="product-pricing">₹55.0</span>
             </div>
+            <div class="products-card">
+                <img src="images/product-1.jpg" alt="products">
+                <span class="product-title">Red T-Shirt</span>
+                <div>
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/emptystar.png" alt="" width="15" height="16">
+                </div>
+                <span class="product-pricing">₹50.0</span>
+            </div>
+            <div class="products-card">
+                <img src="images/product-4.jpg" alt="products">
+                <span class="product-title">Blue Printed T-Shirt</span>
+                <div>
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/emptystar.png" alt="" width="15" height="16">
+                </div>
+                <span class="product-pricing">₹75.0</span>
+            </div>
+            <div class="products-card">
+                <img src="images/product-2.jpg" alt="products">
+                <span class="product-title">HRX Shoes</span>
+                <div>
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/emptystar.png" alt="" width="15" height="16">
+                </div>
+                <span class="product-pricing">₹45.0</span>
+            </div>
+            <div class="products-card">
+                <img src="images/product-3.jpg" alt="products">
+                <span class="product-title">HRX Track Pants</span>
+                <div>
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/star.png" alt="" width="15" height="16">
+                    <img src="images/emptystar.png" alt="" width="15" height="16">
+                </div>
+                <span class="product-pricing">₹55.0</span>
+            </div>
         </div>
       </div>
-
-      <!-- banner section -->
-       <div class="smart-watch-banner">
-        <div class="container">
-            <div class="smart-watch-img-container">
-                <img src="images/exclusive.png" alt="">
-            </div>
-            <div class="smart-watch-banner-content">
-                <span class="smart-watch-banner-title">Exclusively Available on Store</span>
-                <h1 class="smart-watch-banner-subtitle">Smart Band 4</h1>
-                <span class="smart-watch-banner-description">The Mi Smart Band 4 features a 39.9% larger(than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</span>
-                <button class="buyNowButton">Buy Now &#8594</button>
-            </div>
+      
+        <div class="paginationButtonContainer">
+            <span class="paginationButton">1</span>
+            <span class="paginationButton">2</span>
+            <span class="paginationButton">3</span>
+            <span class="paginationButton">4</span>
+            <span class="paginationButton">&#8594</span>
         </div>
-       </div>
+    </div>
 
-       <!-- testimonial section -->
-        <div class="testimonialParentContainer">
-            <div class="testimonialInnerContainer">
-                <div class="testimonialCards">
-                    <p class="testimonialContent">I love how comfortable and stylish their products are! The shoes are perfect for my gym workouts, and the sports watch helps me track my progress easily. I feel more motivated during every session because my gear actually supports my performance.</p>
-                    <div class="ratings">
-                        <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/emptystar.png" alt="" width="15" height="16">
-                    </div>
-                    <img src="images/user-1.png" class="userImage" alt="">
-                    <h3>Jean Rose</h3>
-                </div>
-                <div class="testimonialCards">
-                    <p class="testimonialContent">These running shoes have completely changed my training routine. They’re super light, have great cushioning, and give me the push I need during sprints. Even the track pants fit perfectly and let me move freely. This brand is now my first choice for all my sports gear!</p>
-                    <div class="ratings">
-                        <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/emptystar.png" alt="" width="15" height="16">
-                    </div>
-                    <img src="images/user-2.png" class="userImage" alt="">
-                    <h3>Walter White</h3>
-                </div>
-                <div class="testimonialCards">
-                    <p class="testimonialContent">Their track pants and shoes are honestly the best I’ve used. The fabric is breathable, and the shoes give amazing grip during my basketball practice. I trust this brand because the quality really shows during tough workouts.</p>
-                    <div class="ratings">
-                        <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/star.png" alt="" width="15" height="16">
-                    <img src="images/emptystar.png" alt="" width="15" height="16">
-                    </div>
-                    <img src="images/user-3.png" class="userImage" alt="">
-                    <h3>Helen</h3>
-                </div>
-            </div>
-        </div>
 
-        <!-- branding section -->
-         <div class="brandingContainer">
-            <div class="brandingInnerContainer">
-                <img src="images/logo-godrej.png" alt="">
-                <img src="images/logo-oppo.png" alt="">
-                <img src="images/logo-coca-cola.png" alt="">
-                <img src="images/logo-paypal.png" alt="">
-                <img src="images/logo-philips.png" alt="">
-            </div>
-         </div>
-
-         <!-- footer section -->
+     <!-- footer section -->
           <div class="footer">
             <div class="footerInnerContainer">
                 <div class="footerColumn footerColumn1">
@@ -309,5 +233,6 @@
                 </div>
             </div>
           </div>
+
 </body>
 </html>
